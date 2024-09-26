@@ -1,0 +1,12 @@
+<div class="container">
+
+  <h1>Lists#index</h1>
+  <ul>
+    <% @list.each do |item| %>
+      <li><%= link_to item.name, item %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to '+ New List', new_list_path, class: 'btn btn-primary' %>
+
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+
+
+    <h1>Create a List</h1>
+
+    <%= simple_form_for @list do |f| %>
+      <%= f.input :name, required: true %>
+      <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+
+    <br>
+
+    <%= link_to 'Home', lists_path, class: 'btn btn-primary' %>
+
+</div>
